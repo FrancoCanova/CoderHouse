@@ -1,0 +1,146 @@
+<!-- 1. Crear una hoja de estilos CSS y usar la etiqueta link para adjuntarla a la página HTML del ejercicio de la clase 2.
+
+2. En la hoja CSS debe haber por lo menos un comentario.
+
+3. Utilizar una imagen de fondo en el <body>. Para esto buscar en google "background images". Utilizar también un color de fondo. 
+
+4. Utilizar un selector ID para una de las etiquetas de encabezados, cuyo estilo incluya negrita y una tipografía de Google fonts. 
+
+5. Utilizar un selector de clase para los dos párrafos, cuyo estilo tenga tamaño de letra de 14px y un interlineado de 18px.
+
+6. Utilizar un selector de elemento para el otro encabezado y especificando en su estilo un color en RGB Hexadecimal.
+
+7. Incluir a ambos párrafos en una sección <div> que contenga un borde con líneas rayadas de 2 px de ancho y color verde.
+
+8. El encabezado principal debe estar ubicado en el centro y tener en mayúsculas la primer letra de cada palabra (usando CSS).
+
+9. La lista ordenada debe mostrar como viñeta un círculo relleno.
+
+10. Incluir en el footer íconos de Facebook, Twitter e Instagram. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase2Ej</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="ej01Style.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+	<header>
+		<h1 id="titulo">Titulo de Pagina</h1>
+		</br>
+		<nav>
+			<h2><a href="#">QUIENES SOMOS</a></h2>
+			<h2><a href="#">CONTACTO</a><h2></h2>
+		</nav>
+	</header>
+	</hr>
+	<article>
+
+		<section> <div class="pBorder"><p class="parrafos"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation <strong>ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></section>
+
+		</br>
+
+
+		<section> <div class="pBorder"><p class="parrafos"> <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</em>  Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. <br/> Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div> </section>
+
+		<section>
+			<h3>Ordenada por alfabeto:</h3>
+			<ol type="a" class="LOrdenada">
+				<li>Hola</li>
+				<li>Como Estas</li>
+				<li>Hola</li>
+			</ol>
+			
+			<h3>Sin Ordenar:</h3>
+			<ul>
+				<li>Hola</li>
+				<li>Como Estas</li>
+				<li>Hola</li>
+			</ul>
+		</section>
+		<section>
+			<table style="border-style: solid;">
+				<tr>
+					<td></td>
+					<th>DIA</th>
+					<th>HORARIO</th>
+				</tr>
+				<tr>
+					<td>Franco</td>
+					<td>Lunes</td>
+					<td>18 hs</td>
+				</tr>
+				<tr>
+					<td>Tomas</td>
+					<td>Martes</td>
+					<td>15 hs</td>
+				</tr>
+			</table>
+		</section>
+		</br>
+		<section>
+			<form action="#" method="post">
+				<legend>Formulario de Inscripción:</legend>
+				</br>
+				<fieldset id="nombre_apellido">
+					<label for="name">Nombre:</label>
+					<input type="text" name="nombre"  placeholder="Ingrese su nombre"></input>
+					</br>
+					<label for="name">Apellido:</label>
+					<input type="text" name="apellido" placeholder="Ingrese su apellido"></input>
+				</fieldset>
+				</br>
+				</br>
+				<fieldset id="sexo">
+					<label>Sexo:</label>
+					</br>
+					<input type="radio" name="sexo" value="masculino"></input>
+					<label for="masculino">Masculino</label>
+					</br>
+					<input type="radio" name="sexo" value="femenino"></input>
+					<label for="femenino">Femenino</label>
+				</fieldset>
+				</br>
+				</br>
+				<fieldset id="e-mail">
+					<label for="e-mail">E-mail:</label>
+					<input type="email" name="mail" placeholder="E-Mail"></input>
+				</fieldset>
+				</br>
+				</br>
+				<fieldset id="comentarios">
+					<textarea name="comentario" placeholder="Dejanos tu comenterio..."></textarea>
+				</fieldset>
+				</br>
+				</br>
+				<fieldset id="submit">
+					<input type="Submit" placeholder="Listo !"></input>
+				</fieldset>
+			</form>
+		</section>
+		<section>
+			<video src=""></video>
+		</section>
+
+	</article>
+	<footer>
+		<span class="ion-social-twitter icono"></span>
+		<span class="ion-social-facebook icono"></span>
+		<span class="ion-social-instagram icono"></span>
+	</footer>
+</body>
+</html>

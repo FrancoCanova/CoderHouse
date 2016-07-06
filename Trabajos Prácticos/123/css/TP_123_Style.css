@@ -1,0 +1,135 @@
+/*------------------------------------------------------------------Header--------------------------------------------------------------*/
+#logo {
+	margin-left: 150px;
+}
+
+header nav a {
+	font-family: 'Raleway', sans-serif;
+	color:#AFAFAF;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+
+	transition-duration: 0.5s;
+
+	margin: 5px;
+
+	position: relative;
+	top:-40px;
+	left:75%;
+}
+
+header nav a:hover {
+	color:#233141;
+	transition-duration: 0.5s;
+}
+
+#fotoHeader {
+	width: 100%;
+
+	position: relative;
+	top:-20px;
+}
+.imgText {
+	color:white;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+
+	position: relative;
+	top:-330px;
+	left: 15%;
+	font-size: 15px;
+}
+
+.imgText h1 {
+	font-family: 'Raleway', sans-serif;
+}
+#searchBar {
+	height: 76px;
+	width:50%;
+
+	font-size:20px;
+	border:none;
+
+	position: relative;
+	top:-195px;
+	margin-left: 22%;
+	
+}
+
+#searchBar:focus {
+	border: 1px solid #0A97ED;
+}
+
+
+#searchButton {
+	padding: 30px;
+	width: 60px;
+	height: 69px;
+
+	background-color:#0A97ED;
+	text-decoration: none;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+	border-radius: 2px;
+
+	position: relative;
+	top:-195px;
+	left:-4px;
+}
+
+#searchButton:active {
+	background-color:#47A3F7;
+}
+/*------------------------------------------------------------------Main----------------------------------------------------------------*/
+section span img {
+	position: relative;
+	left:47% ;
+}
+
+ section h3 {
+ 	font-family: 'Raleway', sans-serif;
+ 	font-variant: small-caps;
+ 	color:black;
+
+ 	text-align: center;
+ }
+
+ section p {
+ 	font-family: 'Open Sans', sans-serif;
+ 	text-align:center;
+ 	font-size: 15px;
+ }
+
+ #SS {
+ 	position: relative;
+ 	left:-35%;
+ 	top:-150px;
+ }
+
+ #HS {
+ 	position: relative;
+ 	top:-350px;
+ 	left: -12%;
+ }
+
+ #LS {
+ 	position: relative;
+ 	top:-550px;
+ 	left:11%;
+ }
+
+ #GDN {
+ 	position: relative;
+ 	top:-750px;
+ 	left:35%;
+ }
+
+.threedot {
+	position:relative;
+	left:48%;
+	top:-725px;
+}
+
+
