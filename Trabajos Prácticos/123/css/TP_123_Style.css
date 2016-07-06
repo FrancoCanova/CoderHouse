@@ -47,7 +47,11 @@ header nav a:hover {
 	height: 76px;
 	width:50%;
 
+	font-family: 'Raleway', sans-serif;
 	font-size:20px;
+	color: #0A97ED;
+	font-variant: small-caps;
+	text-align: center;
 	border:none;
 
 	position: relative;
@@ -83,6 +87,7 @@ header nav a:hover {
 	background-color:#47A3F7;
 }
 /*------------------------------------------------------------------Main----------------------------------------------------------------*/
+																/*Section #1*/
 section span img {
 	position: relative;
 	left:47% ;
@@ -92,6 +97,7 @@ section span img {
  	font-family: 'Raleway', sans-serif;
  	font-variant: small-caps;
  	color:black;
+ 	letter-spacing: 2px;
 
  	text-align: center;
  }
@@ -102,28 +108,54 @@ section span img {
  	font-size: 15px;
  }
 
- #SS {
+
+ .ServiceImg {
+ 	transform: scale(1,1);
+ 	transition-duration: 0.2s;
+ 	transition-timing-function: ease-in-out;
+
  	position: relative;
- 	left:-35%;
+ 	left:35%;
+ }
+
+ .ServiceImg:hover {
+ 	transform: scale(1.2,1.2);
+ 	transition-duration: 0.3s;
+ 	transition-timing-function: ease-in-out;
+
+ 	cursor: pointer;
+ }
+
+  #SS {
+ 	position: relative;
  	top:-150px;
+ 	left:41.75px;
+ 	height: 200px;
+ 	width:250px;
  }
 
  #HS {
  	position: relative;
  	top:-350px;
- 	left: -12%;
+ 	left:353.5px;
+ 	height: 200px;
+ 	width:250px;;
  }
 
  #LS {
  	position: relative;
  	top:-550px;
- 	left:11%;
+ 	left:665.25px;
+ 	height: 200px;
+ 	width:250px;
  }
 
  #GDN {
  	position: relative;
  	top:-750px;
- 	left:35%;
+ 	left:977px;
+ 	height: 200px;
+ 	width:250px;
  }
 
 .threedot {
@@ -132,4 +164,34 @@ section span img {
 	top:-725px;
 }
 
+section .img{
+	transform: scale(1,1);
+	transition-duration: 0.3s
+}
+section .img:hover {
+	transform: scale(1.2,1.2);
+	transition-duration: 0.3s
+}
+																/*Section #2*/
 
+.headerSec2 {
+	text-align: center;
+	line-height: -10px;
+
+	position: relative;
+	top:-725px;
+}
+.headerSec2 h1 {
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif; 
+}
+.headerSec2 p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#IPhone {
+	position: relative;
+	top:-650px;
+	left:38%;
+
+}
