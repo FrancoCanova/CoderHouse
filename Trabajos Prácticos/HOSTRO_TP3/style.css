@@ -1,0 +1,167 @@
+body { /*Sacando margenes laterales al body de 8px que vienen por default*/
+	box-sizing: border-box;
+	margin: 8px 0px ;
+/*-------------------------------------------------------------- HEADER ----------------------------------------------------------------*/
+}
+#logo { /*Achicando el logo*/
+	width: 20%;
+	height: 20%;
+}
+.container { /*Contenedor para centrar elementos*/
+	max-width: 800px;
+	margin:auto;
+}
+
+header nav { /*posiciono al nav a la derecha*/
+	float:right;
+	height: 23px;
+}
+
+header nav ul li { /*posiciono elementos del nav*/
+	display: inline-block;
+	position: relative;
+	top:-7px;
+	margin: 0px 10px;
+}
+
+header nav ul li a { /*Estilos a elementos del nav*/
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	color:#AFAFAF;
+	letter-spacing: 1.5px;
+
+	transition-duration: 0.5s;
+}
+
+header nav ul li a:hover { /*Efecto elementos nav al hover*/
+	color:#233141;
+	transition-duration: 0.5s;
+}
+
+.indexBanner { /*Contenedor para banner/texto/searchBar/searchButton*/
+	width: 100%;
+	margin: 5px 0px;
+}
+
+.text { /*Estilos del texto dentro del banner*/
+	font-size: 70%;
+	color:white;
+	display: block;
+
+	position: absolute;
+	top:143px;
+	margin: 0px 22%;
+}
+
+.text h1 { /*Estilos específicos del h1 dentro del banner*/
+	font-family: 'Raleway', sans-serif;
+}
+
+.text p { /*Estilos específicos del p dentro del banner*/
+	font-family: 'Open Sans', sans-serif;
+	line-height: 23px;
+}
+
+.searchBar { /*Estilos de la barra de búsqueda*/
+	width:50% ;
+	height:55px;
+
+	padding: 0px 10px;
+	border:none;
+	font-size: 20px;
+	font-variant: small-caps;
+	font-family: 'Open Sans', sans-serif;
+	color:#0C92F5;
+
+	position: absolute;
+	top: 69.5%;
+	left:21%;
+
+	transition-duration: 1s;
+}
+
+.searchBar:focus { /*Efecto de la barra de búsqueda*/
+	color:white;
+	background-color: #0C92F5;
+	border-right: 1px solid white;
+	transition-duration: 1s;
+	
+}
+
+.searchButton { /*Estilos Boton de Búsqueda*/
+	width: 100px;
+	height: 55px;
+	background-color: #0C92F5;
+
+	text-decoration: none;
+
+	position: absolute;
+	top:69.5%;
+	left: 71%;
+}
+
+.searchButton:active { /*Efecto del botón de búsqueda*/
+	background-color: #78B2FB;
+}
+
+.elements { /*Estilos de los elementos dentro del botón de búsqueda*/
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+	text-align: center;
+
+	position: absolute;
+	margin: 0px;
+	top:33%;
+}
+/*-------------------------------------------------------------- MAIN ----------------------------------------------------------------*/
+
+.servicios {
+	/*border: 2px solid black;*/
+	height: 200px;
+	width: 800px;
+	display: flex;
+	justify-content: flex-start;
+	margin: 75px auto;
+}
+
+.xu {
+	height: 200px;
+	width: 200px;
+	 /*border:2px solid red;*/
+	margin: 0px;
+
+}
+
+.xu img {
+	position: absolute;
+	margin: 5px 65.8px;
+
+	transform:scale(1,1);
+	transition-duration: 0.5s;
+}
+
+.xu img:hover {
+	position: absolute;
+	cursor: pointer;
+
+	transform:scale(1.2,1.2);
+	transition-duration: 0.5s;
+}
+
+.xu h3 {
+	height: 20px;
+	font-family: 'Raleway', sans-serif;
+ 	font-variant: small-caps;
+ 	font-size: 15px;
+ 	color:black;
+ 	letter-spacing: 2px;
+
+ 	text-align: center;
+ 	margin:auto;
+}
+
+/*Se me esta complicando posicionar los parrafos dentro de los contenedores servicios. La verdad que estoy intentando hace varias horas y no
+encuentro como lo puedo hacer.*/
