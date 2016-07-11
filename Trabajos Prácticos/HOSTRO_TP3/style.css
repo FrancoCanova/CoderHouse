@@ -77,7 +77,7 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	color:#0C92F5;
 
 	position: absolute;
-	top: 69.5%;
+	top: 67.5%;
 	left:21%;
 
 	transition-duration: 1s;
@@ -99,7 +99,7 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	text-decoration: none;
 
 	position: absolute;
-	top:69.5%;
+	top:67.5%;
 	left: 71%;
 }
 
@@ -234,6 +234,14 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 
 	width: 300px;
 	height: 112px;
+
+	transform: translateX(0px);
+	transition-duration: 0.5s;
+}
+
+.pros1:hover {
+	transform: translateX(-20px);
+	transition-duration: 0.5s;
 }
 
 .pros1Text {
@@ -289,6 +297,14 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 
 	width: 300px;
 	height: 112px;
+
+	transform: translateX(0px);
+	transition-duration: 0.5s;
+}
+
+.pros2:hover {
+	transform: translateX(20px);
+	transition-duration: 0.5s;
 }
 
 .pros2Text {
