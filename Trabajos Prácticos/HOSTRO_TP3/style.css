@@ -4,9 +4,10 @@ body { /*Sacando margenes laterales al body de 8px que vienen por default*/
 	overflow-x:hidden;
 /*-------------------------------------------------------------- HEADER ----------------------------------------------------------------*/
 }
-#logo { /*Achicando el logo*/
+.logo { /*Achicando el logo*/
 	width: 20%;
 	height: 20%;
+	margin-left: 30px;
 }
 .container { /*Contenedor para centrar elementos*/
 	max-width: 800px;
@@ -29,6 +30,7 @@ header nav ul li { /*posiciono elementos del nav*/
 header nav ul li a { /*Estilos a elementos del nav*/
 	text-decoration: none;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
 	font-size: 17px;
 	color:#AFAFAF;
 	letter-spacing: 1.5px;
@@ -66,19 +68,18 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 }
 
 .searchBar { /*Estilos de la barra de búsqueda*/
-	width:50% ;
-	height:55px;
+	width:63% ;
 
-	padding: 0px 10px;
 	border:none;
 	font-size: 20px;
 	font-variant: small-caps;
 	font-family: 'Open Sans', sans-serif;
 	color:#0C92F5;
 
-	position: absolute;
-	top: 67.5%;
-	left:21%;
+	position: relative;
+	left:78px;
+	padding:15.2px;
+	top:-40px;
 
 	transition-duration: 1s;
 }
@@ -92,31 +93,29 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 }
 
 .searchButton { /*Estilos Boton de Búsqueda*/
-	width: 100px;
-	height: 55px;
+	padding: 20px;
 	background-color: #0C92F5;
+	border:none;
 
 	text-decoration: none;
 
-	position: absolute;
-	top:67.5%;
-	left: 71%;
+	position: relative;
+	float: right;
+	margin-right: 100px;
+	top:-35px;
 }
 
 .searchButton:active { /*Efecto del botón de búsqueda*/
 	background-color: #78B2FB;
 }
 
-.elements { /*Estilos de los elementos dentro del botón de búsqueda*/
+.searchButton span { /*Estilos de los elementos dentro del botón de búsqueda*/
 	color:white;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
 	letter-spacing: 2px;
 	font-variant: small-caps;
 	text-align: center;
-
-	position: absolute;
-	margin: 0px;
-	top:33%;
 }
 /*-------------------------------------------------------------- MAIN ----------------------------------------------------------------*/
 /*Section 1*/
@@ -125,7 +124,7 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	width: 800px;
 	display: flex;
 	flex-direction: row;
-	margin: 75px auto auto auto;
+	margin: 10px auto auto auto;
 }
 
 .xu {
@@ -174,14 +173,13 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
  	line-height: 25px;
 }
 
-.widdot {
+.widdot1 {
 	transform: rotate(90deg);
 	margin-top: 27px;
 }
 
 .threedot {
-	margin: 0px 47.8%;
-	z-index: 1;
+	margin: 0 47.8%;
 }
 
 
@@ -216,37 +214,42 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 .s2main {
 	display: flex;
 	flex-direction: row;
-	margin-top: 40px;
-
 }
 
 .col1 {
-	width: 300px;
-	height: 336px;
+	width: 280px;
+
+	margin-right: 20px;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction:column;
+	align-items: flex-end;
 }
 
 .pros1 {
-	float:right;
-	display: flex;
+	width: 280px;
+	height: 100px;
 
-	width: 300px;
-	height: 112px;
+	margin-top:20px;
 
 	transform: translateX(0px);
 	transition-duration: 0.5s;
 }
-
 .pros1:hover {
 	transform: translateX(-20px);
 	transition-duration: 0.5s;
 }
 
+.pros1 img {
+	float: right;
+}
+
 .pros1Text {
-	width: 201.6px;
-	height: 111.6px;
+	width: 230px;
+	height: 92px;
+
+	position: relative;
+	right:5px;
 }
 
 .pros1Text h3 {
@@ -256,9 +259,7 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
  	color:#233141;
  	letter-spacing: 2px;
  	text-align: right;
- 	margin: 17px 0px;
- 	position: relative;
- 	top:31px;
+
 }
 
 .pros1Text p {
@@ -267,49 +268,48 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
  	text-align:right;
  	font-size: 11px;
  	line-height: 20px;
- 	position: relative;
- 	top:25px;
- 	margin: 0px;
+
 }
 
-.pros1 img {
-	margin: 31px 25px;
-	float: right;
-	margin-left: 10px;
-}
 
 #iphone {
-	z-index: 1;
+
 }
 
 .col2 {
-	width: 300px;
-	height: 336px;
+	width: 280px;
+
+	margin-left: 20px;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction:column;
+	align-items: flex-start;
 }
 
 .pros2 {
-	float:right;
-	display: flex;
-	flex-direction: row-reverse;
-
-	width: 300px;
-	height: 112px;
+	width: 282px;
+	height: 100px;
+	margin-top:20px;
 
 	transform: translateX(0px);
 	transition-duration: 0.5s;
 }
-
 .pros2:hover {
 	transform: translateX(20px);
 	transition-duration: 0.5s;
 }
 
+.pros2 img {
+	float: left;
+}
+
 .pros2Text {
-	width: 201.6px;
-	height: 111.6px;
+	width: 230px;
+	height: 92px;
+	float: right;
+
+	position: relative;
+	left:5px;
 }
 
 .pros2Text h3 {
@@ -319,9 +319,7 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
  	color:#233141;
  	letter-spacing: 2px;
  	text-align: left;
- 	margin: 17px 0px;
- 	position: relative;
- 	top:31px;
+
 }
 
 .pros2Text p {
@@ -330,21 +328,223 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
  	text-align:left;
  	font-size: 11px;
  	line-height: 20px;
- 	position: relative;
- 	top:25px;
- 	margin: 0px;
+
 }
 
-.pros2 img {
-	margin: 31px 25px;
-	margin-right: 10px;
-	float: left;
-	margin-left: 10px;
-}
 
 .pricingBanner {
 	background: url("img/pricing-bg.jpg") center;
+	width:100%;
+	height: 128.7px;
 	background-size: cover;
 	padding: 170px 0 150px;
-	margin-top:-51px;
+
+	position:relative;
+	top:-50px;
+	z-index: -1;
 }
+
+.s3header {
+	position:relative;
+	top:-80px;
+
+}
+.s3header h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:#233141;
+	text-align: center;
+
+	margin-top:12px;
+}
+
+.s3header p {
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	color:#233141;
+	text-align: center;
+}
+
+.s3main {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.prices {
+	width:24%;
+	background-color: white;
+	box-shadow: 5px 5px 5px lightgrey;
+	z-index: 1;
+}
+
+.prices h3 {
+	font-family: 'Raleway', sans-serif;
+ 	font-variant: small-caps;
+ 	font-size: 15px;
+ 	color:#233141;
+ 	letter-spacing: 2px;
+ 	margin-top:45px;
+ 	text-align: center;
+ 	padding: 9%;
+}
+
+
+.price { /*Estilos al 15*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	color:#233141;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.price sup { /*Estilos al $ y .99*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.mount  { /*Estilos al /mount*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	margin:0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.prices ul {
+	list-style-type: none;
+	border-top:1px solid lightgrey;
+	margin:0px;
+	padding: 15px 15px 15px 35px;
+}
+
+.prices ul li pre {
+	font-family: 'Open Sans', sans-serif;
+	color:#233141;
+	margin:auto;
+	font-size: 12.5px;
+	line-height: 30px;
+}
+
+.prices button {
+	background-color: #00AFF1;
+	border:none;
+	width:85%;
+	text-align: center;
+	margin: 6%;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-variant: small-caps;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 900;
+	margin-bottom: 35px;
+} 
+
+.prices button:active {
+	background-color: #78B2FB;
+	text-decoration: none;
+}
+.smallP {
+	color:#00AFF1;
+	font-weight: 900;
+	font-size: 13px;
+}
+
+.normalP {
+	color:#F9D423;
+	font-weight: 900;
+	font-size: 13px;
+}
+
+.bigP {
+	color:#FF9359;
+	font-weight: 900;
+	font-size: 13px;
+}
+
+.bestP {
+	color:#F75F40;
+	font-weight: 900;
+	font-size: 13px;
+}
+
+
+
+.footerHeader {
+	background-color: #233141;
+	position:relative;
+	top:300px;
+	box-shadow: 0px -5px 5px lightgrey;
+}
+
+.footerHeader h2 {
+	padding:80px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color:white;
+	font-size: 22px;
+
+	margin:40px 0px 0px 0px;
+}
+
+.footerHeader span {
+	font-family: Arial, sans-serif;
+	font-weight: 900;
+	color:#00AFF1;
+	font-size: 23px;
+}
+
+.footerMain {
+	background-color:#151D26; 
+	margin:0px;
+	position: relative;
+	top:300px;
+}
+
+.footerMain .container p {
+	font-size:10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color:white;
+	padding:15px;
+
+	display: inline-block;
+}
+
+.footerMain ul {
+	list-style-type: none;
+	float: right;
+	margin:0px;
+}
+
+.footerMain ul li {
+	display: inline-block;
+
+	font-size:10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color:white;
+	padding:25px 10px;
+}
+
+.footerMain ul li a {
+	text-decoration: none;
+	color:white;
+}
+
+
+
+
+
+/*<div class="indexBanner elements">
+					<span class="ion-android-search"></span>
+					<span>Search</span>
+				</div>*/
