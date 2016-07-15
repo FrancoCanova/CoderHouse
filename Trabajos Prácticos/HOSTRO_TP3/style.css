@@ -118,6 +118,9 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	text-align: center;
 }
 /*-------------------------------------------------------------- MAIN ----------------------------------------------------------------*/
+main {
+	height:1550px;
+}
 /*Section 1*/
 .servicios {
 	height: 200px;
@@ -342,6 +345,7 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	position:relative;
 	top:-50px;
 	z-index: -1;
+	
 }
 
 .s3header {
@@ -431,12 +435,12 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	line-height: 30px;
 }
 
-.prices button {
+.boton {
 	background-color: #00AFF1;
 	border:none;
 	width:85%;
 	text-align: center;
-	margin: 6%;
+	margin: 8%;
 	padding: 10px;
 	border-radius: 5px;
 	font-family: 'Raleway', sans-serif;
@@ -447,9 +451,8 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	margin-bottom: 35px;
 } 
 
-.prices button:active {
+.boton:active {
 	background-color: #78B2FB;
-	text-decoration: none;
 }
 .smallP {
 	color:#00AFF1;
@@ -475,12 +478,14 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	font-size: 13px;
 }
 
+footer {
+	position:relative;
+	top:8px;
+}
 
 
 .footerHeader {
 	background-color: #233141;
-	position:relative;
-	top:300px;
 	box-shadow: 0px -5px 5px lightgrey;
 }
 
@@ -492,7 +497,7 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	color:white;
 	font-size: 22px;
 
-	margin:40px 0px 0px 0px;
+	margin:0;
 }
 
 .footerHeader span {
@@ -505,8 +510,6 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 .footerMain {
 	background-color:#151D26; 
 	margin:0px;
-	position: relative;
-	top:300px;
 }
 
 .footerMain .container p {
@@ -539,12 +542,3 @@ header nav ul li a:hover { /*Efecto elementos nav al hover*/
 	text-decoration: none;
 	color:white;
 }
-
-
-
-
-
-/*<div class="indexBanner elements">
-					<span class="ion-android-search"></span>
-					<span>Search</span>
-				</div>*/
