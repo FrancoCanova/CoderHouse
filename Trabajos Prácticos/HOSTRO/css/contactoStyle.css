@@ -48,7 +48,7 @@ main {
 }
 
 .contactoBanner {
-	background:url('img/indexbanner-bg2.jpg');
+	background:url('../img/indexbanner-bg2.jpg');
 	background-size: cover;
 	padding: 170px 0 150px;
 	margin-top:10px;
@@ -241,16 +241,6 @@ main {
 	color:white;
 }
 
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width:768px) {
 	.container {
 		max-width:95%;
@@ -274,15 +264,6 @@ main {
 		left:42%;
 	}
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width:360px) {
 	.container {
