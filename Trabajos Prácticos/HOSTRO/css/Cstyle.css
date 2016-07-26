@@ -1,0 +1,346 @@
+
+body {
+	overflow-x:hidden;
+
+	box-sizing: border-box;
+	min-width: 360px;
+	margin-top:8px;
+}
+
+.container {
+	max-width: 900px;
+	margin:auto;
+}
+
+header nav {
+	float:right;
+}
+
+header nav ul li {
+	display: inline-block;
+
+	margin: 6% 6px;
+}
+
+
+header nav ul li a {
+	transition-duration: 0.5s;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+
+	color:#AFAFAF;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	font-weight: 900;
+}
+
+header nav ul li a:hover {
+	transition-duration: 0.5s;
+
+	color:#233141;
+}
+
+.contactoBanner {
+	position:relative;
+
+	width:100%;
+	height:auto;
+	margin-top:10px;
+	padding: 170px 0 150px;
+
+	background:url('../img/indexbanner-bg2.jpg');
+	background-size: cover;
+}
+.bannerText {
+	position:absolute;
+	top:26%;
+	left:29%;
+
+	width:40%;
+
+	text-align:center;
+
+	color:white;
+}
+
+.bannerText h2 {
+	margin-bottom:20px;
+
+	letter-spacing:1px;
+
+	font-family: 'Raleway', sans-serif;
+	font-size:35px;
+	font-weight:900;
+}
+
+.bannerText p {
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	line-height: 20px;
+}
+
+section {
+	height:350px
+}
+
+.s1header {
+	position:relative;
+	top:50px;
+
+	text-align:center;
+}
+
+.s1header h3 {
+	margin: auto;
+
+	color:#233141;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 27px;
+	font-weight:900;
+}
+
+.s1header p {
+	margin: 20px auto;
+
+	color:#233141;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+}
+
+.formulario {
+	position:relative;
+	top:80px;
+
+	width:75%;
+	margin:auto;
+}
+
+.col1 {
+	width:47%;
+	margin:3px;
+	padding:5px;
+
+	transition-duration:0.1s;
+
+	border:1px solid #29333F;
+
+}
+
+.col1:focus {
+	transition-duration:0.1s;
+
+	border-top:1px solid white;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+	border-left:3px solid #00AFF1;
+}
+
+.mensajes {
+	float:right;
+
+	width:47%;
+	margin:3px;
+	padding-bottom:80px;
+
+	transition-duration:0.1s;
+
+	border:1px solid #29333F;
+}
+
+.mensajes:focus {
+	transition-duration:0.1s;
+
+	border-top:1px solid white;
+	border-right:1px solid white;
+	border-right:2px solid #00AFF1;
+	border-bottom:1px solid white;
+	border-left:2px solid #00AFF1;
+}
+
+.boton input {
+	position:relative;
+	top:10px;
+	left:43%;
+
+	width:15%;
+	padding: 5px;
+
+	text-align: center;
+	letter-spacing: 2px;
+
+	color: white;
+	border:none;
+	border-radius: 3px;
+	background-color: #00AFF1;
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-variant: small-caps;
+}
+
+.footerHeader {
+	background-color: #233141;
+	box-shadow: 0px -5px 5px lightgrey;
+}
+
+.footerHeader h2 {
+	margin:0;
+	padding:80px;
+
+	text-align: center;
+
+	color:white;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.footerHeader span {
+	color:#00AFF1;
+
+	font-family: Arial, sans-serif;
+	font-size: 23px;
+	font-weight: 900;
+}
+
+.footerMain {
+	margin:0px;
+
+	background-color:#151D26;
+}
+
+.footerMain .container p {
+	display: inline-block;
+
+	padding:15px;
+
+	color:white;
+
+	font-family: 'Raleway', sans-serif;
+	font-size:10px;
+	font-weight: 400;
+}
+
+.footerMain ul {
+	float: right;
+
+	margin:0px;
+
+	list-style-type: none;
+}
+
+.footerMain ul li {
+	display: inline-block;
+
+	padding:15px 10px;
+
+	color:white;
+
+	font-family: 'Raleway', sans-serif;
+	font-size:10px;
+	font-weight: 400;
+}
+
+.footerMain ul li a {
+	text-decoration: none;
+
+	color:white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+  .container {
+		max-width:95%;
+		margin:auto;
+	}
+	header nav {
+		float:none;
+
+		text-align:center;
+	}
+	header nav ul li {
+		margin:2% 10px;
+	}
+	.col1 {
+		width:45%;
+	}
+	.mensajes {
+		width:45%;
+	}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+	.logo {
+		display:block;
+
+		margin:auto;
+	}
+	header nav ul li {
+		display: block;
+
+		margin: 4% 0px;
+	}
+	.contactoBanner {
+		display: none;
+	}
+	.bannerText {
+		display: none;
+	}
+	.col1 {
+		width:44%;
+	}
+	.mensajes {
+		width:44%;
+	}
+	.boton input {
+		left:0;
+
+		width:100%;
+	}
+	.footerHeader h2 {
+		padding:40px;
+	}
+
+	.footerMain {
+		margin:0px;
+
+		text-align:center;
+
+		background-color:#151D26;
+	}
+
+	.footerMain ul {
+		float:none;
+	}
+
+	.footerMain ul li {
+		padding:10px 10px;
+	}
+
+	.footerMain ul li a {
+		text-decoration: none;
+
+		color:white;
+	}
+}
+
+@media only screen and (max-width:360px) {
+	.ion-android-search {
+		display:none;
+	}

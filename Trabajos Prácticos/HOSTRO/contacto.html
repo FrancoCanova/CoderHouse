@@ -3,7 +3,7 @@
 <head>
 	<title>HOSTRO CONTACTO</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/contactoStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/Cstyle.css">
 	<!-- IONICON ICONS-->
 	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<!-- FONTS -->
@@ -12,26 +12,27 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<!--FOR RESPONSIVE DESIGN-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
 </head>
 <body>
+	<header>
+		<div class="container">
+			<a href="index.html" class="top"><img src="img/hostro-logo.png" class="logo"></a>
+			<nav>
+				<ul>
+					<li><a href="main.html">HOME</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="contactoBanner">
+			<div class="bannerText">
+				<h2>Contact</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nesciunt deserunt repellendus, earum culpa dolorum quidem rem eius.</p>
+			</div>
+		</div>
+	</header>
 	<main>
-		<header>
-			<div class="container">
-				<a href="index.html" class="top"><img src="img/hostro-logo.png" class="logo"></a>
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="contacto.html">CONTACTO</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="contactoBanner">
-				<div class="bannerText">
-					<h2>Contact</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nesciunt deserunt repellendus, earum culpa dolorum quidem rem eius.</p>
-				</div>
-			</div>
-		</header>
 		<section>
 			<div class="s1header">
 				<h3>Get in Touch</h3>
@@ -39,15 +40,17 @@
 			</div>
 			<div class="formulario">
 				<form action="enviador.php" method="post">
-				<input type="text" placeholder="Message" class="col2">
+					<input type="text" placeholder="Message" class="mensajes">
 					<input type="text" placeholder="Name" class="col1">
 					<input type="text" placeholder="Mail" class="col1">
 					<input type="text" placeholder="Subject" class="col1">
-					<input type="submit" value="Submit" class="submit">
+					<div class="boton">
+						<input type="submit" value="Submit">
+					</div>
 				</form>
 			</div>
 
-			
+
 		</section>
 	</main>
 	<footer>
@@ -60,7 +63,7 @@
 				<div class="container">
 					<p><span>&#174</span> 2016 Hostro. All right reserved.</p>
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="main.html">Home</a></li>
 						<li><a href="contacto.html">Contact</a></li>
 						<li><a href="#top"><span class="ion-ios-arrow-up"></span></a></li>
 					</ul>
